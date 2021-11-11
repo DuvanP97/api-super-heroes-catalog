@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const FilterSkills: React.FC<any> = () => {
+const FilterSkills: React.FC = () => {
   return <h1>skils</h1>;
 };
 

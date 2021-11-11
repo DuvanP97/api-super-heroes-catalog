@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const NotFound: React.FC<any> = () => {
+const NotFound: React.FC = () => {
   return <h1>404</h1>;
 };
 

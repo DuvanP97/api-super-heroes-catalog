@@ -3,7 +3,7 @@ import CardSuperHeroes from '../../components/CardSuperHeroes';
 import NavBar from '../../components/NavBar';
 import { HomeContainer, NavBarContainer, Title, TitleContainer } from './styles';
 
-const Home: React.FC<any> = () => {
+const Home: React.FC = () => {
   return (
     <HomeContainer>
       <NavBarContainer>
