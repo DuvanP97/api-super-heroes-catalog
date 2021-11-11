@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './pages/404';
 import FilterSkills from './pages/FilterSkills';
 import Home from './pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (): JSX.Element => {
   return (
@@ -15,7 +16,7 @@ const App = (): JSX.Element => {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/index">
+          <Route path="/filter">
             <FilterSkills />
           </Route>
           <Route path="*">
