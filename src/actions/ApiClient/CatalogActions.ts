@@ -4,8 +4,7 @@ import { GetErrorMessage } from '../../utils';
 
 export async function GetSuperHeroeId(): Promise<any | undefined> {
   try {
-    const HeroeData = await new HttpRequest().Get<any>(`${API_URL}Intelligence`);
-    console.log(HeroeData);
+    const HeroeData = await new HttpRequest().Get<any>(`${API_URL}`);
     return HeroeData;
   } catch (error) {
     throw new Error(GetErrorMessage(error));

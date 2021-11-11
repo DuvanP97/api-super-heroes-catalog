@@ -2,6 +2,7 @@ import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const defaultHeader: AxiosRequestConfig = {
   headers: {
+    'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
   },
 };

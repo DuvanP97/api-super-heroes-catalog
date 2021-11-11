@@ -12,13 +12,33 @@ import {
   ToastHeader,
   Col,
   Row,
+  Button,
 } from 'reactstrap';
+import { HeoresDataThunk } from '../../actions/Thunks/CatalogThunk';
+import { useAppDispatch } from '../../hooks/redux';
 
-const CardSuperHeroes: React.FC<any> = () => {
+const CardSuperHeroes: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  // const heoresData = () => {
+  //   HeoresDataThunk();
+  // };
+
+  const heoresData = React.useCallback(() => {
+    dispatch(HeoresDataThunk()).then(() => {
+      console.log(HeoresDataThunk);
+    });
+  }, [dispatch]);
+
+  React.useEffect(() => {
+    heoresData();
+  }, [heoresData]);
+
   return (
     <Col sm="6">
       <Card>
         <CardBody>
+          <Button onClick={heoresData}>Button</Button>
           <CardTitle tag="h4">Agent Bob - Intelligence</CardTitle>
           <CardImg
             alt="Card image cap"
