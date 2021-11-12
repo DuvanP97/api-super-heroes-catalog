@@ -1,8 +1,11 @@
 import { AnyAction, CombinedState, combineReducers, Reducer } from '@reduxjs/toolkit';
 import { RootState } from '../states';
 import storage from 'redux-persist/lib/storage';
+import heroesSlice from './slices/heroes.slice';
 
-export const appReducer = combineReducers({});
+export const appReducer = combineReducers({
+  heroesdata: heroesSlice,
+});
 
 export const persistConfig = {
   key: 'root',
