@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './pages/404';
-import FilterSkills from './pages/FilterSkills';
 import Home from './pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PowerstatsFilter from './pages/PowerstatsFilter';
+import SearchName from './pages/SearchName';
+import AppearanceFilter from './pages/AppearanceFilter';
 
 const App = (): JSX.Element => {
   return (
@@ -15,8 +18,14 @@ const App = (): JSX.Element => {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/index">
-            <FilterSkills />
+          <Route path="/powerstats">
+            <PowerstatsFilter />
+          </Route>
+          <Route path="/name">
+            <SearchName />
+          </Route>
+          <Route path="/appearance">
+            <AppearanceFilter />
           </Route>
           <Route path="*">
             <NotFound />
