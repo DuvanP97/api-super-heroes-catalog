@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar';
 import SearchBar from '../../components/SearchBar';
 import { HomeContainer, NavBarContainer, Title, TitleContainer } from './styles';
 
-const SearchName: React.FC = () => {
+const SearchName = (): JSX.Element => {
   return (
     <HomeContainer>
       <NavBarContainer>

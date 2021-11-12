@@ -1,20 +1,20 @@
 import * as React from 'react';
-import { useState } from 'react';
 import CardSuperHeroes from '../../components/CardSuperHeroes';
 import NavBar from '../../components/NavBar';
 import { HomeContainer, NavBarContainer, Title, TitleContainer } from './styles';
 import { HeoresDataThunk } from '../../actions/Thunks/CatalogThunk';
-import { useAppDispatch } from '../../hooks/redux';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import toast from 'react-hot-toast';
 
-const Home: React.FC = () => {
+const Home = (): JSX.Element => {
   const dispatch = useAppDispatch();
-  const [heroesInfo, setHeroesInfo] = useState<IHeroDataId>();
+  const heroes = useAppSelector((state) => state.heroesdata);
 
   const getHeroeData = React.useCallback(async () => {
-    const heroeData = await dispatch(HeoresDataThunk());
-    if (HeoresDataThunk.rejected.match(heroeData)) {
-      toast.error(heroeData.payload as string);
+    const heroes = await dispatch(HeoresDataThunk(45));
+
+    if (HeoresDataThunk.rejected.match(heroes)) {
+      toast.error(heroes.payload as string);
     }
   }, [dispatch]);
 
@@ -30,7 +30,14 @@ const Home: React.FC = () => {
       <TitleContainer>
         <Title>SUPERHERO API - HOME / DASHBOARD</Title>
       </TitleContainer>
-      <CardSuperHeroes />
+      {heroes.heroes && (
+        <React.Fragment>
+          <CardSuperHeroes name={heroes.heroes.name} img={heroes.heroes.image.url} />;
+          {/* {heroes.heroes.map((heroe: any) => {
+            <CardSuperHeroes name={heroe.name} img={heroe.url} />;
+          })} */}
+        </React.Fragment>
+      )}
     </HomeContainer>
   );
 };
