@@ -4,149 +4,80 @@ import {
   CardImg,
   CardBody,
   CardTitle,
-  CardSubtitle,
-  CardText,
-  List,
-  Toast,
-  ToastBody,
-  ToastHeader,
   Col,
   Row,
+  Button,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
 } from 'reactstrap';
+import { PaginationContainer } from './styles';
 
-const CardSuperHeroes: React.FC<any> = () => {
+const CardSuperHeroes: React.FC = () => {
   return (
-    <Col sm="6">
-      <Card>
-        <CardBody>
-          <CardTitle tag="h4">Agent Bob - Intelligence</CardTitle>
-          <CardImg
-            alt="Card image cap"
-            src="https://www.superherodb.com/pictures2/portraits/10/100/10255.jpg"
-            top
-            width="100%"
-          />
-          <CardBody>
-            <Row>
-              <Col sm="6">
-                <div className="p-3 my-2 rounded">
-                  <Toast body>
-                    <ToastHeader>Biography</ToastHeader>
-                    <ToastBody>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        full-name
-                      </CardSubtitle>
-                      <CardText>Bob</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        alter-egos
-                      </CardSubtitle>
-                      <CardText>No alter egos found.</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        aliases
-                      </CardSubtitle>
-                      <List type="unstyled">
-                        <li>Bob</li>
-                        <li>agent of Hydra</li>
-                        <li>agent of A.I.M</li>
-                      </List>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        place-of-birth
-                      </CardSubtitle>
-                      <CardText>-</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        first-appearance
-                      </CardSubtitle>
-                      <CardText>Cable & Deadpool #38 (May, 2007)</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        publisher
-                      </CardSubtitle>
-                      <CardText>Marvel Comics</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        alignment
-                      </CardSubtitle>
-                      <CardText>good</CardText>
-                    </ToastBody>
-                  </Toast>
-                </div>
-              </Col>
-              <Col sm="6">
-                <div className="p-3 my-2 rounded">
-                  <Toast body>
-                    <ToastHeader>appearance</ToastHeader>
-                    <ToastBody>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        gender
-                      </CardSubtitle>
-                      <CardText>Male</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        race
-                      </CardSubtitle>
-                      <CardText>Human</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        height
-                      </CardSubtitle>
-                      <List type="unstyled">
-                        <li>5'10</li>
-                        <li>178 cm</li>
-                      </List>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        weight
-                      </CardSubtitle>
-                      <List type="unstyled">
-                        <li>181 lb</li>
-                        <li>81 kg</li>
-                      </List>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        eye-color
-                      </CardSubtitle>
-                      <CardText>Brown</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        hair-color
-                      </CardSubtitle>
-                      <CardText>Brown</CardText>
-                    </ToastBody>
-                  </Toast>
-                </div>
-              </Col>
-              <Col sm="6">
-                <div className="p-3 my-2 rounded">
-                  <Toast body>
-                    <ToastHeader>work</ToastHeader>
-                    <ToastBody>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        occupation
-                      </CardSubtitle>
-                      <CardText>Mercenary, janitor; former pirate, terrorist</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        base
-                      </CardSubtitle>
-                      <CardText>Mobile; formerly Manhattan, Hellcarrier</CardText>
-                    </ToastBody>
-                  </Toast>
-                </div>
-              </Col>
-              <Col sm="6">
-                <div className="p-3 my-2 rounded">
-                  <Toast body>
-                    <ToastHeader>connections</ToastHeader>
-                    <ToastBody>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        group-affiliation
-                      </CardSubtitle>
-                      <CardText>A.I.M., Deadpool; formerly Agency X, Hydra</CardText>
-                      <CardSubtitle className="text-muted" tag="h6">
-                        relatives
-                      </CardSubtitle>
-                      <CardText>Allison (ex-wife); Terry and Howie (sons)</CardText>
-                    </ToastBody>
-                  </Toast>
-                </div>
-              </Col>
-            </Row>
-          </CardBody>
-        </CardBody>
-      </Card>
-    </Col>
+    <React.Fragment>
+      <Row>
+        <Col sm="3">
+          <Card>
+            <CardImg
+              alt="Card image cap"
+              src="https://www.superherodb.com/pictures2/portraits/10/100/10255.jpg"
+              top
+              width="100%"
+              height="350"
+            />
+            <CardBody>
+              <CardTitle tag="h5">Agent Bob - Intelligence</CardTitle>
+              <Button color="danger" onClick={function noRefCheck() {}}>
+                Click Me
+              </Button>
+              <Modal toggle={function noRefCheck() {}}>
+                <ModalHeader charCode="Y" toggle={function noRefCheck() {}}>
+                  Modal title
+                </ModalHeader>
+                <ModalBody>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="primary" onClick={function noRefCheck() {}}>
+                    Do Something
+                  </Button>{' '}
+                  <Button onClick={function noRefCheck() {}}>Cancel</Button>
+                </ModalFooter>
+              </Modal>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <PaginationContainer>
+        <Pagination aria-label="Page navigation example">
+          <PaginationItem disabled>
+            <PaginationLink first href="#" />
+          </PaginationItem>
+          <PaginationItem disabled>
+            <PaginationLink href="#" previous />
+          </PaginationItem>
+          <PaginationItem active>
+            <PaginationLink href="#">1</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#" next />
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#" last />
+          </PaginationItem>
+        </Pagination>
+      </PaginationContainer>
+    </React.Fragment>
   );
 };
 
