@@ -1,19 +1,39 @@
 declare interface IHeroesDataSlice {
-  heroes: IHeroDataId[];
+  heroes: IHeroDataId;
 }
 declare interface IHeroDataId {
-  results: ISuperHeroId[] | null;
+  results: ISuperHeroId | null;
+}
+declare interface ISearchName {
+  results: ISearchNameHero | null;
+}
+declare interface ISearchNameData {
+  data: ISearchNameHeroData;
+}
+declare interface ISearchNameHeroData {
+  results: ISearchNameHero[];
+}
+declare interface ISearchNameHero {
+  response: string;
+  id: string;
+  name: string;
+  powerstats: IPowerStats;
+  biography: IBiography;
+  appearance: IAppearance;
+  work: IWork;
+  connections: IConnection;
+  image: IImage;
 }
 declare interface ISuperHeroId {
   response: string;
   id: string;
   name: string;
-  powerstats: IPowerStats[];
-  biography: IBiography[];
-  appearance: IAppearance[];
-  work: IWork[];
-  connections: IConnection[];
-  image: IImage[];
+  powerstats: IPowerStats;
+  biography: IBiography;
+  appearance: IAppearance;
+  work: IWork;
+  connections: IConnection;
+  image: IImage;
 }
 declare interface IPowerStats {
   intelligence: string;
@@ -35,8 +55,8 @@ declare interface IBiography {
 declare interface IAppearance {
   gender: string;
   race: string;
-  height: string[];
-  weight: string[];
+  height: string;
+  weight: string;
   'eye-color': string;
   'hair-color': string;
 }
@@ -49,5 +69,5 @@ declare interface IConnection {
   relatives: string;
 }
 declare interface IImage {
-  url: string;
+  url: any;
 }

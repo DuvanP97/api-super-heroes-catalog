@@ -2,9 +2,11 @@ import { AnyAction, CombinedState, combineReducers, Reducer } from '@reduxjs/too
 import { RootState } from '../states';
 import storage from 'redux-persist/lib/storage';
 import heroesSlice from './slices/heroes.slice';
+import searchSlice from './slices/search.slice';
 
 export const appReducer = combineReducers({
   heroesdata: heroesSlice,
+  searchdata: searchSlice,
 });
 
 export const persistConfig = {
@@ -18,9 +20,7 @@ const rootReducer: Reducer<CombinedState<any>, AnyAction> = (
   action: AnyAction
 ) => {
   if (action.type === 'CLEAN/cleanState') {
-    // this applies to all keys defined in persistConfig(s)
     storage.removeItem('persist:root');
-
     state = {} as RootState;
   }
   return appReducer(state, action);
