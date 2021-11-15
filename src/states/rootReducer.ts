@@ -5,8 +5,8 @@ import heroesSlice from './slices/heroes.slice';
 import searchSlice from './slices/search.slice';
 
 export const appReducer = combineReducers({
-  heroesdata: heroesSlice,
-  searchdata: searchSlice,
+  heroesData: heroesSlice,
+  searchData: searchSlice,
 });
 
 export const persistConfig = {

@@ -7,7 +7,7 @@ import { SearchNameThunk } from '../../actions/Thunks/CatalogThunk';
 
 const SearchBar: React.FC<any> = ({ value }) => {
   const dispatch = useAppDispatch();
-  const search = useAppSelector((state) => state.searchdata);
+  const search = useAppSelector((state) => state.searchData);
 
   const [name, setName] = React.useState('');
 

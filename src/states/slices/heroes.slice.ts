@@ -13,7 +13,7 @@ const heroesSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(HeoresDataThunk.fulfilled, (state, { payload }) => {
-      state.heroes = payload;
+      state.heroesData = payload;
     });
   },
 });

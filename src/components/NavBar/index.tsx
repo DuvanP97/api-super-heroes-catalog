@@ -4,7 +4,7 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import { WHITE_COLOR } from '../../assets/styles/colors';
 import { Container } from './styles';
 
-const NavBar: React.FC = () => {
+const NavBar = (): JSX.Element => {
   const history = useHistory();
 
   const navegationHome = () => {

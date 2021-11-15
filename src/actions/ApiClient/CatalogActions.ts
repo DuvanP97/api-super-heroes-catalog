@@ -2,10 +2,10 @@ import { HttpRequest } from './HttpRequest';
 import { API_URL } from '../../constants/ApiUrls';
 import { GetErrorMessage } from '../../utils';
 
-export async function GetSuperHeroeId(id: number): Promise<IHeroDataId | undefined> {
+export async function GetSuperHeroeId(letter: string): Promise<IHeroDataId | undefined> {
   try {
-    const HeroeData = await new HttpRequest().Get<IHeroDataId>(
-      `https://thingproxy.freeboard.io/fetch/${API_URL}${id}`
+    const HeroeData = await new HttpRequest().Get<any>(
+      `https://thingproxy.freeboard.io/fetch/${API_URL}search/${letter}`
     );
     if (HeroeData.okay && HeroeData.data) {
       return HeroeData.data;

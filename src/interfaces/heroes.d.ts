@@ -1,6 +1,11 @@
 declare interface IHeroesDataSlice {
   heroes: IHeroDataId;
 }
+
+// declare interface IHeroes {
+//   id: number;
+//   skills: number[];
+// }
 declare interface IHeroDataId {
   results: ISuperHeroId | null;
 }

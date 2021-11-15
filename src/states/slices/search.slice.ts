@@ -13,7 +13,7 @@ const searchSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(SearchNameThunk.fulfilled, (state, { payload }) => {
-      state.search = payload;
+      state.searchData = payload;
     });
   },
 });
