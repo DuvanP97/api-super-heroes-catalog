@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Card, CardImg, CardBody, CardTitle, Col, Row } from 'reactstrap';
 import { HeoresDataThunk } from '../../actions/Thunks/CatalogThunk';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import toast from 'react-hot-toast';
 
 const CardSuperHeroes: React.FC<any> = () => {
   const dispatch = useAppDispatch();
@@ -10,7 +9,7 @@ const CardSuperHeroes: React.FC<any> = () => {
 
   const getHeroeData = React.useCallback(async () => {
     const heroes = await dispatch(HeoresDataThunk('a'));
-
+    console.log(heroes);
     // if (HeoresDataThunk.rejected.match(heroes)) {
     //   toast.error(search.payload as string);
     // }
@@ -18,7 +17,6 @@ const CardSuperHeroes: React.FC<any> = () => {
 
   React.useEffect(() => {
     getHeroeData();
-    console.log('datahero', heroes.heroesData.results);
   }, [getHeroeData]);
 
   return (
