@@ -28,9 +28,9 @@ const SearchBar: React.FC<any> = ({ value }) => {
         <Button color="warning" onClick={getHeroeData}>
           SEARCH
         </Button>
-        {search.search && (
+        {search.searchData && (
           <React.Fragment>
-            <CardSuperHeroesInfo data={search.search} />;
+            <CardSuperHeroesInfo data={search.searchData} />;
           </React.Fragment>
         )}
       </InputGroup>
