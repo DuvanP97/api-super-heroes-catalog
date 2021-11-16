@@ -74,4 +74,4 @@ _ReactJs con TypeScript_
 #
 
 _Reactstrap_
-![enter image description here](https://imgur.com/gallery/QgZbkdi)
+![enter image description here](https://imgur.com/a/LqIZEJw)
