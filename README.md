@@ -65,7 +65,7 @@ _entre las acciones que permite hacer con la API de SuperHero es: busqueda por i
     -feature/searchname_ui
     -feature/filter_ui
 
-![enter image description here](https://imgur.com/gallery/Pnm8yaG)
+![enter image description here](https://ibb.co/f95mk7Z)
 
 ## Construido con 🛠️
 
