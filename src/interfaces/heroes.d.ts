@@ -15,6 +15,14 @@ declare interface ISearchName {
 declare interface ISearchNameData {
   data: ISearchNameHeroData;
 }
+declare interface IPowerstatThunk {
+  id: number;
+  powerstat: string;
+}
+declare interface IAppearanceThunk {
+  id: number;
+  appearance: string;
+}
 declare interface ISearchNameHeroData {
   results: ISearchNameHero[];
 }

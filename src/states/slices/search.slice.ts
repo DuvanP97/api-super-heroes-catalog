@@ -4,7 +4,7 @@ import { SearchNameThunk } from '../../actions/Thunks/CatalogThunk';
 const SEARCH = 'SEARCH';
 
 const initialState: any = {
-  heroes: null,
+  search: null,
 };
 
 const searchSlice = createSlice({
