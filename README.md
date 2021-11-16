@@ -65,7 +65,7 @@ _entre las acciones que permite hacer con la API de SuperHero es: busqueda por i
     -feature/searchname_ui
     -feature/filter_ui
 
-![enter image description here](https://ibb.co/f95mk7Z)
+![enter image description here](https://i.ibb.co/C6ZxbF4/Screenshot-175.png)
 
 ## Construido con 🛠️
 
@@ -74,4 +74,4 @@ _ReactJs con TypeScript_
 #
 
 _Reactstrap_
-![enter image description here](https://imgur.com/a/LqIZEJw)
+![enter image description here](https://i.ibb.co/9T2cr5Z/Screenshot-176.png)
