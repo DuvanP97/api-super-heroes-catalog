@@ -4,7 +4,7 @@ import { Card, CardBody, CardImg, CardTitle, Col, FormGroup, Input, Row } from '
 import { FilterPowerstatThunk } from '../../actions/Thunks/CatalogThunk';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 
-const FilterBarPowerstat: React.FC<any> = () => {
+const FilterBarPowerstat: React.FC<any> = ({ value }) => {
   const dispatch = useAppDispatch();
   const heroes = useAppSelector((state) => state.filterPowerstat);
 
@@ -21,13 +21,13 @@ const FilterBarPowerstat: React.FC<any> = () => {
   return (
     <React.Fragment>
       <FormGroup>
-        <Input id="exampleSelect" name="select" type="select">
-          <option>combat</option>
-          <option>durability</option>
-          <option>intelligence</option>
-          <option>power</option>
-          <option>speed</option>
-          <option>strength</option>
+        <Input id="exampleSelect" name="select" type="select" value={value}>
+          <option value={'combat'}>combat</option>
+          <option value={'durability'}>durability</option>
+          <option value={'intelligence'}>intelligence</option>
+          <option value={'power'}>power</option>
+          <option value={'speed'}>speed</option>
+          <option value={'strength'}>strength</option>
         </Input>
       </FormGroup>
       <Row>
