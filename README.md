@@ -67,6 +67,8 @@ _entre las acciones que permite hacer con la API de SuperHero es: busqueda por i
 
 ![enter image description here](https://i.ibb.co/C6ZxbF4/Screenshot-175.png)
 
+![enter image description here](https://i.ibb.co/Gvj62rg/Screenshot-177.png)
+
 ## Construido con 🛠️
 
 _ReactJs con TypeScript_
@@ -90,3 +92,11 @@ _Dockerize_
 _Dockerize_
 
 [_Dockerize_ documentation](https://dev.to/karanpratapsingh/dockerize-your-react-app-4j2e)
+
+#
+
+_Preview_
+
+#
+
+![enter image description here](https://i.ibb.co/z6dHc5c/Screenshot-178.png)
