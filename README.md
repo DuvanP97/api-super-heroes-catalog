@@ -74,4 +74,7 @@ _ReactJs con TypeScript_
 #
 
 _Reactstrap_
+
+#
+
 ![enter image description here](https://i.ibb.co/9T2cr5Z/Screenshot-176.png)
