@@ -44,3 +44,49 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Landing Page
+
+_Proyecto creado para el uso de los servicios de la [API SuperHero](https://superheroapi.com//)_
+
+# Contiene
+
+_HOME Powerstats Filter, Powerstats Filter, Powerstats Filter_
+
+#
+
+_entre las acciones que permite hacer con la API de SuperHero es: busqueda por id, busqueda por categorias, busqueda por nombre_
+
+# Ramas creadas durante la creacion del proyecto
+
+    -main
+    -develop
+    -feature/catalog_ui
+    -feature/searchname_ui
+    -feature/filter_ui
+
+![enter image description here](https://i.ibb.co/C6ZxbF4/Screenshot-175.png)
+
+## Construido con 🛠️
+
+_ReactJs con TypeScript_
+
+#
+
+_Reactstrap_
+
+#
+
+![enter image description here](https://i.ibb.co/9T2cr5Z/Screenshot-176.png)
+
+#
+
+_Dockerize_
+
+#
+
+![enter image description here](https://res.cloudinary.com/practicaldev/image/fetch/s--4zX5Ng4Y--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hq33zh8xowu4nc1onlr2.png)
+
+_Dockerize_
+
+[_Dockerize_ documentation](https://dev.to/karanpratapsingh/dockerize-your-react-app-4j2e)
