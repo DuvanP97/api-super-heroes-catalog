@@ -32,13 +32,10 @@ export async function GetSearchName(name: string): Promise<IHeroDataId | undefin
   }
 }
 
-export async function GetDataFilterPowerstat(
-  id: number,
-  powerstat: string
-): Promise<any | undefined> {
+export async function GetDataFilterPowerstat(): Promise<any | undefined> {
   try {
     const InfoSuperHero = await new HttpRequest().Get<ISearchName>(
-      `https://thingproxy.freeboard.io/fetch/${API_URL}${id}/${powerstat}`
+      `https://thingproxy.freeboard.io/fetch/${API_URL}search/z`
     );
     if (InfoSuperHero.okay && InfoSuperHero.data) {
       return InfoSuperHero.data;
@@ -50,13 +47,10 @@ export async function GetDataFilterPowerstat(
   }
 }
 
-export async function GetDataFilterAppearance(
-  id: number,
-  appearance: string
-): Promise<any | undefined> {
+export async function GetDataFilterAppearance(): Promise<any | undefined> {
   try {
     const InfoSuperHero = await new HttpRequest().Get<ISearchName>(
-      `https://thingproxy.freeboard.io/fetch/${API_URL}${id}/${appearance}`
+      `https://thingproxy.freeboard.io/fetch/${API_URL}search/q`
     );
     if (InfoSuperHero.okay && InfoSuperHero.data) {
       return InfoSuperHero.data;

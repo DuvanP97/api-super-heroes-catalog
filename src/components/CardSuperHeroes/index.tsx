@@ -1,4 +1,5 @@
 import * as React from 'react';
+import toast from 'react-hot-toast';
 import { Card, CardImg, CardBody, CardTitle, Col, Row } from 'reactstrap';
 import { HeoresDataThunk } from '../../actions/Thunks/CatalogThunk';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
@@ -9,10 +10,9 @@ const CardSuperHeroes: React.FC<any> = () => {
 
   const getHeroeData = React.useCallback(async () => {
     const heroes = await dispatch(HeoresDataThunk('a'));
-    console.log(heroes);
-    // if (HeoresDataThunk.rejected.match(heroes)) {
-    //   toast.error(search.payload as string);
-    // }
+    if (HeoresDataThunk.rejected.match(heroes)) {
+      toast.error(heroes.payload as string);
+    }
   }, [dispatch]);
 
   React.useEffect(() => {

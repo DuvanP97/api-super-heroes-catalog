@@ -33,10 +33,9 @@ export const SearchNameThunk = createAsyncThunk(
 
 export const FilterPowerstatThunk = createAsyncThunk(
   'heroes/filterpowerstat',
-  async (Powerstat: IPowerstatThunk, { rejectWithValue }) => {
+  async (_, { rejectWithValue }) => {
     try {
-      const { id, powerstat } = Powerstat;
-      const FilterPower = await GetDataFilterPowerstat(id, powerstat);
+      const FilterPower = await GetDataFilterPowerstat();
       return FilterPower;
     } catch (error) {
       return rejectWithValue(GetErrorMessage(error));
@@ -46,10 +45,9 @@ export const FilterPowerstatThunk = createAsyncThunk(
 
 export const FilterAppearanceThunk = createAsyncThunk(
   'heroes/filterappearance',
-  async (Powerstat: IAppearanceThunk, { rejectWithValue }) => {
+  async (_, { rejectWithValue }) => {
     try {
-      const { id, appearance } = Powerstat;
-      const FilterAppearance = await GetDataFilterAppearance(id, appearance);
+      const FilterAppearance = await GetDataFilterAppearance();
       return FilterAppearance;
     } catch (error) {
       return rejectWithValue(GetErrorMessage(error));
