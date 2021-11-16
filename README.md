@@ -47,17 +47,25 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Landing Page
 
-_Proyecto creado para el uso de los servicios de la [API SuperHero](https://superheroapi.com//)_
+_project with the purpose of using [API SuperHero](https://superheroapi.com//)_
 
-# Contiene
+# Contains
 
 _HOME Powerstats Filter, Powerstats Filter, Powerstats Filter_
 
 #
 
-_entre las acciones que permite hacer con la API de SuperHero es: busqueda por id, busqueda por categorias, busqueda por nombre_
+_Get all SuperHeroes and Villians data from all universes under a single API._
 
-# Ramas creadas durante la creacion del proyecto
+# Contains
+
+_The superhero API, is a quantified and programatically accessible data source of all superheroes from both the comic universe. We've taken all the stuff and put it together in a form that is easier to consume with software. Then we made an API so you can consume it in a hassle free manner._
+
+# How can I use it?
+
+_The data is accessible through a REST API. Consult our documentation if you'd like to get started. Helper libraries are also provided so you can consume the API in the choice of your language._
+
+# Branches created during the creation of the project
 
     -main
     -develop
@@ -67,13 +75,14 @@ _entre las acciones que permite hacer con la API de SuperHero es: busqueda por i
 
 ![enter image description here](https://i.ibb.co/C6ZxbF4/Screenshot-175.png)
 
-## Construido con 🛠️
+![enter image description here](https://i.ibb.co/Gvj62rg/Screenshot-177.png)
 
-_ReactJs con TypeScript_
+# Built with 🛠️
 
-#
-
-_Reactstrap_
+    -ReactJs with TypeScript
+    -React-Redux
+    -Redux Toolkit
+    -Reactstrap
 
 #
 
@@ -83,10 +92,18 @@ _Reactstrap_
 
 _Dockerize_
 
+_I dockerize the React application taking advantage of the builder pattern with multi-stage builds for optimization_
+
 #
 
 ![enter image description here](https://res.cloudinary.com/practicaldev/image/fetch/s--4zX5Ng4Y--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hq33zh8xowu4nc1onlr2.png)
 
-_Dockerize_
+\_
 
-[_Dockerize_ documentation](https://dev.to/karanpratapsingh/dockerize-your-react-app-4j2e)
+#
+
+_Preview_
+
+#
+
+![enter image description here](https://i.ibb.co/z6dHc5c/Screenshot-178.png)
